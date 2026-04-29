@@ -6,7 +6,7 @@ test('la suma de 5 + 8 to equal 3', () => {
 
 test("One euro should be 1.17 dollars", function() {
     // Importo la funcion desde app.js
-    const { fromEuroToDollar } = require('./app.js');
+    const { fromEuroToDollar } = require('../app.js');
 
     // Uso la función como debe ser usada
     const dollars = fromEuroToDollar(3.5);
@@ -20,7 +20,7 @@ test("One euro should be 1.17 dollars", function() {
 
 test("1.17 dollars should be 187.17 yens", function() {
     // Importamos la función desde app.js
-    const { fromDollarToYen } = require('./app.js');
+    const { fromDollarToYen } = require('../app.js');
 
     // Si 1.07 dólares son 1 euro, y 1 euro son 156.5 yenes,
     // entonces 1.07 dólares deben ser exactamente 156.5 yenes.
@@ -32,7 +32,7 @@ test("1.17 dollars should be 187.17 yens", function() {
 
 test("187.17 yens should be 0.87 pounds", function() {
     // Importamos la función desde app.js
-    const { fromYenToPound } = require('./app.js');
+    const { fromYenToPound } = require('../app.js');
 
     // Si 187.17 yenes son 1 euro, y 1 euro son 0.87 libras,
     // entonces 187.17 yenes deben ser 0.87 libras.
